@@ -47,52 +47,6 @@ sudo apt-get install filezilla -y
 sudo apt-get install git -y
 
 # ============================================================
-# Fonts
-# ============================================================
-
-# Microsoft Fonts
-wget http://ftp.de.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.6_all.deb
-sudo apt-get purge ttf-mscorefonts-installer -y
-sudo apt install ./ttf-mscorefonts-installer_3.6_all.deb -y
-sudo dpkg-reconfigure ttf-mscorefonts-installer
-
-# Latex fonts
-sudo apt-get install texlive-fonts-recommended texlive-fonts-extra -y
-
-
-# ============================================================
-# 文書處理環境
-# ============================================================
-
-# APA 6
-#sudo apt-get install biblatex biblatex-dw
-sudo apt-get install texlive-publishers -y
-sudo apt-get install texlive-bibtex-extra -y
-sudo texhash
-
-# Lyx
-sudo add-apt-repository ppa:lyx-devel/release -y
-sudo apt-get update
-sudo apt-get install lyx -y
-
-
-# Recoll
-sudo apt-get install recoll -y
-
-# ============================================================
-# 平面設計
-# ============================================================
-
-# 安裝 Inkscape 向量圖形編輯軟體
-sudo apt-get install inkscape -y
-
-# 安裝 GIMP 點陣圖形編輯軟體
-sudo apt-get install gimp -y
-
-# 安裝 Gthumb 一個類似 ACDSee 的看圖軟體
-sudo apt-get install gthumb -y
-
-# ============================================================
 # 多媒體處理環境
 # ============================================================
 
@@ -124,14 +78,6 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 sudo add-apt-repository ppa:hzwhuang/ss-qt5
 sudo apt-get update
 sudo apt-get install shadowsocks-qt5
-
-# ============================================================
-# 安装atom
-# ============================================================
-
-curl https://atom-installer.github.com/v1.18.0/atom-amd64.deb?s=1497483719&ext=.deb
-sudo dpkg -i install atom-amd64.deb
-apm install atom-material-ui atom-material-syntax markdown-writer
 
 # ============================================================
 # 最後清理
